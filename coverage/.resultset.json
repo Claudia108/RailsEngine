@@ -75,23 +75,23 @@
         1,
         null,
         1,
+        5,
+        1,
+        null,
+        4,
+        null,
+        null,
+        null,
+        1,
+        5,
+        1,
+        null,
+        4,
+        null,
+        null,
+        null,
+        1,
         2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
         null,
         null
       ],
@@ -110,25 +110,25 @@
         null,
         null,
         1,
-        2,
+        1,
         null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         null,
         1,
         2,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        4,
         null,
         null,
         null,
@@ -148,6 +148,11 @@
         null
       ],
       "/Users/claudia/Turing/3module/projects/RailsEngine/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/merchant_serializer.rb": [
+        1,
         1,
         null
       ],
@@ -269,8 +274,28 @@
         0,
         0,
         0
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_item_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/item_serializer.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/transaction_serializer.rb": [
+        0,
+        0,
+        0
       ]
     },
-    "timestamp": 1464806202
+    "timestamp": 1464821564
   }
 }

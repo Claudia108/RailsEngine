@@ -1,7 +1,6 @@
 require 'csv'
 
 namespace :import do
-
   desc "import customers from csv"
   task customers: :environment do
     counter = 0
@@ -15,6 +14,7 @@ namespace :import do
       puts {customer.errors.full_messages.join(", ")} if customer.errors.any?
       counter += 1 if customer.persisted?
     end
+    puts "#{counter} customers have been imported."
   end
 
   desc "import merchants from csv"
@@ -29,6 +29,7 @@ namespace :import do
       puts {merchant.errors.full_messages.join(", ")} if merchant.errors.any?
       counter += 1 if merchant.persisted?
     end
+    puts "#{counter} merchants have been imported."
   end
 
   desc "import items from csv"
@@ -46,6 +47,7 @@ namespace :import do
       puts {item.errors.full_messages.join(", ")} if item.errors.any?
       counter += 1 if item.persisted?
     end
+    puts "#{counter} items have been imported."
   end
 
   desc "import invoices from csv"
@@ -62,6 +64,7 @@ namespace :import do
       puts {invoice.errors.full_messages.join(", ")} if invoice.errors.any?
       counter += 1 if invoice.persisted?
     end
+    puts "#{counter} invoices have been imported."
   end
 
   desc "import invoice_items from csv"
@@ -79,6 +82,7 @@ namespace :import do
       puts {invoice_item.errors.full_messages.join(", ")} if invoice_item.errors.any?
       counter += 1 if invoice_item.persisted?
     end
+    puts "#{counter} invoice_items have been imported."
   end
 
   desc "import transactions from csv"
@@ -96,5 +100,8 @@ namespace :import do
       puts {transaction.errors.full_messages.join(", ")} if transaction.errors.any?
       counter += 1 if transaction.persisted?
     end
+    puts "#{counter} transactions have been imported."
   end
+
+  task :all => [:customers, :merchants, :items, :invoices, :invoice_items, :transactions]
 end
