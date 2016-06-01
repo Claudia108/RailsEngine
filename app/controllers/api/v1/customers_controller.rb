@@ -6,8 +6,11 @@ module Api
         respond_with Customer.all
       end
 
+      def show
+        respond_with Customer.find(params[:id])
+      end
+
       def find
-        binding.pry
         respond_with Customer.match(customer_params)
       end
 
@@ -17,10 +20,6 @@ module Api
 
       def random
         respond_with Customer.random_dataset
-      end
-
-      def show
-        respond_with Customer.find(params[:id])
       end
 
 
