@@ -7,6 +7,7 @@ module Api
       end
 
       def find
+        binding.pry
         respond_with Customer.match(customer_params)
       end
 
@@ -26,7 +27,7 @@ module Api
       private
 
       def customer_params
-        params.permit(:first_name, :last_name, :created_at, :updated_at)
+        params.permit(:id, :first_name, :last_name, :created_at, :updated_at)
       end
     end
   end
