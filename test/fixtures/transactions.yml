@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  invoice_id: 
-  credit_card_number: MyString
+  invoice_id: 5
+  credit_card_number: 4567945439495
   credit_card_expiration_date: 2016-05-31
-  result: MyString
+  result: paid
 
 two:
-  invoice_id: 
-  credit_card_number: MyString
+  invoice_id: 7
+  credit_card_number: 45675067739292
   credit_card_expiration_date: 2016-05-31
-  result: MyString
+  result: pending

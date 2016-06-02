@@ -1,5 +1,6 @@
 class Item < ActiveRecord::Base
   belongs_to :merchant
+  has_many :invoice_items
 
   def self.match(params)
     if params[:name]
