@@ -1,26 +1,31 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   name: Idello
   created_at: 2012-03-27 14:53:59
   updated_at: 2012-03-27 14:53:59
 
 two:
+  id: 2
   name: Miller
   created_at: 2011-03-27 14:54:09
   updated_at: 2011-03-27 14:54:09
 
 three:
+  id: 3
   name: Idello
   created_at: 2011-03-27 14:54:09
   updated_at: 2011-03-27 14:54:09
 
 four:
+  id: 4
   name: Figaro
   created_at: 2012-03-27 14:53:59
   updated_at: 2012-03-27 14:53:59
 
 five:
+  id: 5
   name: Quirrel
   created_at: 2013-03-27 14:53:59
   updated_at: 2013-03-27 14:53:59

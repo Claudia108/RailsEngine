@@ -61,14 +61,14 @@ class CustomerTest < ActiveSupport::TestCase
     customer = Customer.find_all(created_at: created_at)
 
     assert_equal 2, customer.count
-    assert_equal id, customer.last["id"]
-    assert_equal name, customer.last["first_name"]
+    assert_equal id, customer.first["id"]
+    assert_equal name, customer.first["first_name"]
 
     customer = Customer.find_all(updated_at: updated_at)
 
     assert_equal 2, customer.count
-    assert_equal id, customer.last["id"]
-    assert_equal name, customer.last["first_name"]
+    assert_equal id, customer.first["id"]
+    assert_equal name, customer.first["first_name"]
   end
 
   test "returns a random customer" do

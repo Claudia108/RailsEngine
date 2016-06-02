@@ -7,3 +7,4 @@ class Api::V1::Merchants::ItemsController < Api::ApiController
   # def most_items
   #   respond with Item.most_sold_items #(merchant_id: params[:id])
   # end
+end

@@ -1,12 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  id: 1
   item_id: 2
   invoice_id: 2
   quantity: 1
   unit_price: 111
 
 two:
+  id: 2
   item_id: 1
   invoice_id: 1
   quantity: 3

@@ -35,26 +35,26 @@ class MerchantTest < ActiveSupport::TestCase
     merchant = Merchant.find_all(id: id)
 
     assert_equal 1, merchant.count
-    assert_equal id, merchant.last["id"]
-    assert_equal name, merchant.last["name"]
+    assert_equal id, merchant.first["id"]
+    assert_equal name, merchant.first["name"]
 
     merchant = Merchant.find_all(name: name)
 
     assert_equal 2, merchant.count
-    assert_equal id, merchant.last["id"]
-    assert_equal name, merchant.last["name"]
+    assert_equal id, merchant.first["id"]
+    assert_equal name, merchant.first["name"]
 
     merchant = Merchant.find_all(created_at: created_at)
 
     assert_equal 2, merchant.count
-    assert_equal id, merchant.last["id"]
-    assert_equal name, merchant.last["name"]
+    assert_equal id, merchant.first["id"]
+    assert_equal name, merchant.first["name"]
 
     merchant = Merchant.find_all(updated_at: updated_at)
 
     assert_equal 2, merchant.count
-    assert_equal id, merchant.last["id"]
-    assert_equal name, merchant.last["name"]
+    assert_equal id, merchant.first["id"]
+    assert_equal name, merchant.first["name"]
   end
 
   test "returns a random merchant" do
