@@ -8,4 +8,8 @@ class Invoice < ActiveRecord::Base
   def self.random_dataset
     order("RANDOM()").first
   end
+
+  def self.paid
+    joins(:transactions).where(transactions: {result: "success"})
+  end
 end
