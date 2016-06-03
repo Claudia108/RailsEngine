@@ -13,4 +13,15 @@ class InvoiceTest < ActiveSupport::TestCase
     assert invoice.updated_at
   end
 
+  test "returns paid invoices" do
+    assert_equal 2, Invoice.paid.count
+    assert_equal 1, Invoice.paid.first.id
+    assert_equal 2, Invoice.paid.last.id
+  end
+
+  test "returns pending invoices" do
+    assert_equal 1, Invoice.pending.count
+    assert_equal 2, Invoice.pending.first.customer_id
+    assert_equal 1, Invoice.pending.first.id
+  end
 end
