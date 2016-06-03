@@ -6,6 +6,10 @@ module Api
         respond_with Merchant.all
       end
 
+      def show
+        respond_with Merchant.find(params[:id])
+      end
+
       def find
         respond_with Merchant.match(merchant_params)
       end
@@ -16,10 +20,6 @@ module Api
 
       def random
         respond_with Merchant.random_dataset
-      end
-
-      def show
-        respond_with Merchant.find(params[:id])
       end
 
       private

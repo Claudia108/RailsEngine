@@ -22,7 +22,6 @@ module Api
         respond_with Customer.random_dataset
       end
 
-
       private
 
       def customer_params

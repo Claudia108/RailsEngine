@@ -1,4 +1,6 @@
 class Customer < ActiveRecord::Base
+  has_many :invoices
+  has_many :transactions, through: :invoices
 
   def self.match(params)
     if params[:first_name]
@@ -23,4 +25,11 @@ class Customer < ActiveRecord::Base
   def self.random_dataset
     order("RANDOM()").first
   end
+
+  def favorite_merchant
+    paid_invoices = invoices.paid
+    merchant_id = paid_invoices.select('merchant_id, count(merchant_id) as frequency').order("frequency desc").group(:merchant_id).first.merchant_id
+    Merchant.find(merchant_id)
+  end
+
 end

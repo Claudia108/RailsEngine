@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  customer_id: 
-  merchant_id: 
-  status: MyString
+  id: 1
+  customer_id: 2
+  merchant_id: 1
+  status: pending
+  created_at: 2012-03-26 13:55:41
 
 two:
-  customer_id: 
-  merchant_id: 
-  status: MyString
+  id: 2
+  customer_id: 1
+  merchant_id: 3
+  status: paid
+  created_at: 2012-05-06 00:57:54
