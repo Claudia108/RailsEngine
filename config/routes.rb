@@ -23,6 +23,9 @@ Rails.application.routes.draw do
           get 'find', to: 'merchants#find'
           get 'find_all', to: 'merchants#find_all'
           get 'random', to: 'merchants#random'
+          get 'most_revenue', to: 'merchants/revenue#index'
+          get 'most_items', to: 'merchants/items#most_items'
+          get 'revenue', to: 'merchants/revenue#revenue_by_date'
         end
 
         member do

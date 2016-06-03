@@ -81,6 +81,10 @@
         1,
         0,
         null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/claudia/Turing/3module/projects/RailsEngine/app/models/item.rb": [
@@ -118,15 +122,16 @@
         2,
         null,
         null,
+        1,
         null,
-        null,
-        null,
+        0,
         null,
         null,
         null,
         null
       ],
       "/Users/claudia/Turing/3module/projects/RailsEngine/app/models/merchant.rb": [
+        1,
         1,
         1,
         1,
@@ -157,17 +162,39 @@
         null,
         null,
         1,
+        null,
+        null,
         0,
         null,
         null,
         1,
         0,
-        0,
+        null,
         0,
         null,
         null,
         1,
         0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
         0,
         null,
         null
@@ -217,62 +244,53 @@
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/transactions_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items_controller.rb": [
+        1,
+        1,
         1,
         null,
         1,
         1,
         null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/transaction_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/customers_controller.rb": [
-        1,
         null,
         1,
         1,
         null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/customer_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/transactions/invoices_controller.rb": [
-        1,
         null,
         1,
         1,
         null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_serializer.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers/invoices_controller.rb": [
-        1,
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_item_serializer.rb": [
+        1,
+        1,
         1,
         null,
         1,
-        1,
+        8,
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/items/merchants_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/merchants_controller.rb": [
         1,
         null,
         1,
@@ -284,6 +302,19 @@
         1,
         1,
         null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers/transactions_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/transaction_serializer.rb": [
+        1,
+        1,
         null
       ],
       "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/merchants_controller.rb": [
@@ -320,123 +351,6 @@
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers/transactions_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/merchants/items_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/merchants_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/transactions_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/items/invoice_items_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_item_serializer.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        8,
-        null,
-        null
-      ],
       "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
         1,
         null,
@@ -445,7 +359,20 @@
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items/items_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers/invoices_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/invoice_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
         1,
         null,
         1,
@@ -461,10 +388,19 @@
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items/items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/transactions_controller.rb": [
         1,
         1,
         1,
+        null,
         1,
         1,
         null,
@@ -532,11 +468,102 @@
         null,
         null
       ],
-      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoice_items_controller.rb": [
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/items/invoice_items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/items/merchants_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/serializers/customer_serializer.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/transactions_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/transactions/invoices_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/merchants/items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices/customers_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/claudia/Turing/3module/projects/RailsEngine/app/controllers/api/v1/invoices_controller.rb": [
+        1,
+        1,
+        1,
         1,
         1,
         null,
@@ -599,9 +626,18 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0
       ]
     },
-    "timestamp": 1464904284
+    "timestamp": 1464911954
   }
 }

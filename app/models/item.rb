@@ -32,10 +32,10 @@ class Item < ActiveRecord::Base
     order("RANDOM()").first
   end
 
-  # def most_sold_items
-  #
-  #   Invoice.paid
-  # end
+  def most_sold_items
+
+    Invoice.paid
+  end
 
 
 end

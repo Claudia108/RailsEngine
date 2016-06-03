@@ -5,6 +5,6 @@ class Api::V1::Merchants::CustomersController < Api::ApiController
   end
 
   def index
-    respond_with Merchant.find(params[:id]).customer_with_pending_invoices
+    respond_with Merchant.find(params[:id]).customers_with_pending_invoices
   end
 end
