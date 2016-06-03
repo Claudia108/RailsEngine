@@ -29,9 +29,7 @@ class Merchant < ActiveRecord::Base
   end
 
   def revenue_by_date(date)
-    invoices.where(created_at: date).joins(:transactions)
-                  .where(transactions: {result: "success"})
-                  .joins(:invoice_items).sum("quantity * unit_price").to_f / 100
+    invoices.paid.where(created_at: date).joins(:invoice_items).sum("quantity * unit_price").to_f / 100
   end
 
   def favorite_customer
@@ -41,7 +39,8 @@ class Merchant < ActiveRecord::Base
   end
 
   def customers_with_pending_invoices
-    Customer.where(id: invoices.pending.pluck(:customer_id))
+    id = invoices.pending.pluck(:customer_id)
+    Customer.where(id: id)
   end
 
   def self.ordered_by_revenue(quantity)
