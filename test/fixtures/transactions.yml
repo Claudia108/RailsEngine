@@ -5,11 +5,18 @@ one:
   invoice_id: 1
   credit_card_number: 4567945439495
   credit_card_expiration_date: 2016-05-31
-  result: paid
+  result: success
 
 two:
   id: 2
   invoice_id: 2
   credit_card_number: 45675067739292
   credit_card_expiration_date: 2016-05-31
-  result: pending
+  result: success
+
+three:
+  id: 3
+  invoice_id: 1
+  credit_card_number: 45675067739292
+  credit_card_expiration_date: 2016-05-31
+  result: failed

@@ -108,4 +108,22 @@ class ItemTest < ActiveSupport::TestCase
     assert item.updated_at
   end
 
+  test "returns top selling day for one item" do
+    item = Item.first
+    assert_equal "2012-03-26 13:55:41 UTC", item.highest_selling_day.to_s
+  end
+
+  test "returns most sold items" do
+    items = Item.most_sold_items(2)
+
+    assert_equal "Toy", items.first.name
+    assert_equal "Mickey", items.last.name
+  end
+
+  test "returns highest revenue items" do
+    items = Item.highest_revenue_items(2)
+
+    assert_equal "Toy", items.first.name
+    assert_equal "Mickey", items.last.name
+  end
 end

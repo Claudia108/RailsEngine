@@ -5,9 +5,11 @@ one:
   customer_id: 2
   merchant_id: 1
   status: pending
+  created_at: 2012-03-26 13:55:41
 
 two:
   id: 2
   customer_id: 1
   merchant_id: 3
   status: paid
+  created_at: 2012-05-06 00:57:54
