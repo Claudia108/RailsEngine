@@ -27,8 +27,8 @@ class Customer < ActiveRecord::Base
   end
 
   def favorite_merchant
-    paid_invoices = invoices.paid
-    merchant_id = paid_invoices.select('merchant_id, count(merchant_id) as frequency').order("frequency desc").group(:merchant_id).first.merchant_id
+    merchant_id = invoices.paid.select('merchant_id, count(merchant_id) as frequency')
+                .order("frequency desc").group(:merchant_id).first.merchant_id
     Merchant.find(merchant_id)
   end
 

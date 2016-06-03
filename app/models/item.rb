@@ -50,5 +50,4 @@ class Item < ActiveRecord::Base
           .group(:id).order('SUM(invoice_items.unit_price * invoice_items.quantity) DESC')
           .limit(quantity.to_i)
   end
-
 end
