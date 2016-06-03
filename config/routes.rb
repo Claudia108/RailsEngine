@@ -44,9 +44,12 @@ Rails.application.routes.draw do
           get 'find', to: 'items#find'
           get 'find_all', to: 'items#find_all'
           get 'random', to: 'items#random'
+          get 'most_items', to: 'items/revenue#most_items'
+          get 'most_revenue', to: 'items/revenue#index'
         end
 
         member do
+          get 'best_day', to: 'items/revenue#best_day'
           scope module: 'items' do
             get 'invoice_items', to: 'invoice_items#index'
             get 'merchant', to: 'merchants#show'
