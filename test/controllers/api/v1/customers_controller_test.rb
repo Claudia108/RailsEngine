@@ -11,9 +11,8 @@ class Api::V1::CustomersControllerTest < ActionController::TestCase
   end
 
   test "can visit show" do
-    customer = customers(:one)
-    id = customer.id
-    name = customer.first_name
+    id = Customer.first.id
+    name = Customer.first.first_name
 
     get :show, id: id, format: :json
     customer = JSON.parse(response.body)
@@ -24,9 +23,8 @@ class Api::V1::CustomersControllerTest < ActionController::TestCase
   end
 
   test "can find a single customer" do
-    customer = customers(:one)
-    id = customer.id
-    name = customer.first_name
+    id = Customer.first.id
+    name = Customer.first.first_name
 
     get :find, id: id, format: :json
     customer = JSON.parse(response.body)
@@ -37,9 +35,8 @@ class Api::V1::CustomersControllerTest < ActionController::TestCase
   end
 
   test "can find all merchants" do
-    customer = customers(:one)
-    id = customer.id
-    name = customer.first_name
+    id = Customer.first.id
+    name = Customer.first.first_name
 
     get :find_all, id: id, format: :json
     customer = JSON.parse(response.body)

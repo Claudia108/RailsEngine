@@ -12,9 +12,8 @@ class Api::V1::TransactionsControllerTest < ActionController::TestCase
   end
 
   test "can visit show" do
-    transaction = transactions(:one)
-    id = transaction.id
-    credit_card_number = transaction.credit_card_number
+    id = Transaction.first.id
+    credit_card_number = Transaction.first.credit_card_number
 
     get :show, id: id, format: :json
     transaction = JSON.parse(response.body)
@@ -25,9 +24,8 @@ class Api::V1::TransactionsControllerTest < ActionController::TestCase
   end
 
   test "can find a single transaction" do
-    transaction = transactions(:one)
-    id = transaction.id
-    credit_card_number = transaction.credit_card_number
+    id = Transaction.first.id
+    credit_card_number = Transaction.first.credit_card_number
 
     get :find, id: id, format: :json
     transaction = JSON.parse(response.body)
@@ -38,9 +36,8 @@ class Api::V1::TransactionsControllerTest < ActionController::TestCase
   end
 
   test "can find all transactions" do
-    transaction = transactions(:one)
-    id = transaction.id
-    credit_card_number = transaction.credit_card_number
+    id = Transaction.first.id
+    credit_card_number = Transaction.first.credit_card_number
 
     get :find_all, id: id, format: :json
     transaction = JSON.parse(response.body)

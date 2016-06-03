@@ -12,9 +12,8 @@ class Api::V1::InvoiceItemsControllerTest < ActionController::TestCase
   end
 
   test "can visit show" do
-    invoice_item = invoice_items(:one)
-    id = invoice_item.id
-    quantity = invoice_item.quantity
+    id = InvoiceItem.first.id
+    quantity = InvoiceItem.first.quantity
 
     get :show, id: id, format: :json
     invoice_item = JSON.parse(response.body)
@@ -25,9 +24,8 @@ class Api::V1::InvoiceItemsControllerTest < ActionController::TestCase
   end
 
   test "can find a single invoice_item" do
-    invoice_item = invoice_items(:one)
-    id = invoice_item.id
-    quantity = invoice_item.quantity
+    id = InvoiceItem.first.id
+    quantity = InvoiceItem.first.quantity
 
     get :find, id: id, format: :json
     invoice_item = JSON.parse(response.body)
@@ -38,9 +36,8 @@ class Api::V1::InvoiceItemsControllerTest < ActionController::TestCase
   end
 
   test "can find all invoice_items" do
-    invoice_item = invoice_items(:one)
-    id = invoice_item.id
-    quantity = invoice_item.quantity
+    id = InvoiceItem.first.id
+    quantity = InvoiceItem.first.quantity
 
     get :find_all, id: id, format: :json
     invoice_item = JSON.parse(response.body)
